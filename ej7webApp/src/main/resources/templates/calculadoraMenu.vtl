@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Básica</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #FFE4C4; /* Color cálido para el fondo */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background-color: #8FBC8F; /* Verde oscuro para el formulario */
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px; /* Hacer el formulario menos ancho */
+            width: 100%;
+        }
+        .result-section {
+            margin-top: 1rem;
+        }
+        .btn-black {
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2 class="text-center">Calculadora Básica</h2>
+        <form method="GET" action="/getCalculadoraResult">
+            <div class="form-group">
+                <label for="operation">Seleccione una operación:</label>
+                <select class="form-control" id="operation" name="operation">
+                    <option value="suma">Suma</option>
+                    <option value="resta">Resta</option>
+                    <option value="multiplicacion">Multiplicación</option>
+                    <option value="division">División</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="value1">Valor 1:</label>
+                <input type="number" class="form-control" id="value1" name="value1" required>
+            </div>
+            <div class="form-group">
+                <label for="value2">Valor 2:</label>
+                <input type="number" class="form-control" id="value2" name="value2" required>
+            </div>
+            <button type="submit" class="btn btn-black btn-block">Calcular</button>
+        </form>
+        <div class="result-section">
+            #if($result)
+                <h4 class="text-center">Resultado de la operacion: $result</h4>
+            #else
+                <h4 class="text-center">Resultado de la operacion: vacio</h4>
+            #end
+        </div>
+        <form>
+            <button class="btn btn-black btn-block mb-3" formaction="/menuPrincipal">Volver al Menú Principal</button>
+        </form>
+</div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is JAX-WS RI 2.3.6 git-revision#d201abe. --><xs:schema xmlns:tns="http://ej7.mycompany.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://ej7.mycompany.com/">
+
+<xs:element name="getInfoPais" type="tns:getInfoPais"/>
+
+<xs:element name="getInfoPaisResponse" type="tns:getInfoPaisResponse"/>
+
+<xs:element name="operacion" type="tns:operacion"/>
+
+<xs:element name="operacionResponse" type="tns:operacionResponse"/>
+
+<xs:complexType name="operacion">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"/>
+<xs:element name="arg1" type="xs:int"/>
+<xs:element name="arg2" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="operacionResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:double"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInfoPais">
+<xs:sequence>
+<xs:element name="arg0" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getInfoPaisResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

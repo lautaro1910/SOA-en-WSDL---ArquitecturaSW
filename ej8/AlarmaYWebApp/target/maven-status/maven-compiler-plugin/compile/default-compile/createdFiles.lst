@@ -1,0 +1,17 @@
+com/nivi/seguridadmuseoservice/GetAlerta.class
+com/nivi/camara/StreamResponse.class
+com/nivi/seguridadmuseoservice/package-info.class
+com/nivi/seguridadmuseoservice/SetAlerta.class
+com/nivi/seguridadmuseoservice/FaceID.class
+com/nivi/seguridadmuseoservice/ObjectFactory.class
+com/nivi/camara/CamaraData.class
+com/nivi/camara/ObjectFactory.class
+com/nivi/seguridadmuseoservice/ReconocimientoService.class
+com/nivi/camara/CamaraDataService.class
+com/nivi/seguridadmuseoservice/Reconocimiento.class
+com/nivi/seguridadmuseoservice/SetAlertaResponse.class
+com/nivi/seguridadmuseoservice/GetAlertaResponse.class
+com/nivi/camara/package-info.class
+com/nivi/camara/Stream.class
+com/nivi/alarmaywebapp/AlarmaYWebApp.class
+com/nivi/seguridadmuseoservice/FaceIDResponse.class

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="system">
+    <system systemId="http://localhost:8080/seguridadWS?WSDL" uri="wsdl/localhost_8080/seguridadWS.wsdl"/>
+    <system systemId="http://localhost:8080/seguridadWS?xsd=1" uri="wsdl/localhost_8080/seguridadWS.xsd_1.xsd"/>
+    <system systemId="http://localhost:3000/stream?WSDL" uri="wsdl/localhost_3000/stream.wsdl"/>
+    <system systemId="http://localhost:3000/stream?xsd=1" uri="wsdl/localhost_3000/stream.xsd_1.xsd"/>
+</catalog>

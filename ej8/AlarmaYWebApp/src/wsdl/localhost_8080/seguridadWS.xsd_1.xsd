@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e. --><xs:schema xmlns:tns="http://seguridadmuseoservice.nivi.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://seguridadmuseoservice.nivi.com/">
+
+<xs:element name="faceID" type="tns:faceID"></xs:element>
+
+<xs:element name="faceIDResponse" type="tns:faceIDResponse"></xs:element>
+
+<xs:element name="getAlerta" type="tns:getAlerta"></xs:element>
+
+<xs:element name="getAlertaResponse" type="tns:getAlertaResponse"></xs:element>
+
+<xs:element name="setAlerta" type="tns:setAlerta"></xs:element>
+
+<xs:element name="setAlertaResponse" type="tns:setAlertaResponse"></xs:element>
+
+<xs:complexType name="faceID">
+<xs:sequence>
+<xs:element name="arg0" type="xs:int"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="faceIDResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAlerta">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getAlertaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setAlerta">
+<xs:sequence>
+<xs:element name="arg0" type="xs:boolean"></xs:element>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="setAlertaResponse">
+<xs:sequence></xs:sequence>
+</xs:complexType>
+</xs:schema>

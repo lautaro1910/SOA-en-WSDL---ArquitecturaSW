@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (https://github.com/eclipse-ee4j/metro-jax-ws). RI's version is JAX-WS RI 2.3.3 git-revision#b4c5bb6. --><xs:schema xmlns:tns="http://camara.nivi.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://camara.nivi.com/">
+
+<xs:element name="stream" type="tns:stream"/>
+
+<xs:element name="streamResponse" type="tns:streamResponse"/>
+
+<xs:complexType name="stream">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="streamResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>
